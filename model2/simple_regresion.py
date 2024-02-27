@@ -55,7 +55,6 @@ run = wandb.init(project='my-scikit-integration', name="regression_git")
 wandb.sklearn.plot_residuals(reg, X_train, y_train)
 
 
-
 wandb.sklearn.plot_outlier_candidates(reg, X_train, y_train)
 
 
