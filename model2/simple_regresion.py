@@ -59,12 +59,7 @@ run = wandb.init(project='my-scikit-integration', name="regression_git")
 
 wandb.sklearn.plot_residuals(reg, X_train, y_train)
 
-"""### Outlier Candidate
 
-Measures a datapoint's influence on regression model via Cook's distance. Instances with heavily skewed influences could potentially be outliers. Useful for outlier detection.
-
-[Check out the official documentation here $\rightarrow$](https://docs.wandb.com/library/integrations/scikit#outlier-candidates-plot)
-"""
 
 wandb.sklearn.plot_outlier_candidates(reg, X_train, y_train)
 
