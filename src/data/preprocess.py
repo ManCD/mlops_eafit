@@ -1,7 +1,6 @@
 import torch
 import torchvision
 from torch.utils.data import TensorDataset
-
 #testing
 import os
 import argparse
