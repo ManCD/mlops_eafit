@@ -63,14 +63,6 @@ wandb.sklearn.plot_residuals(reg, X_train, y_train)
 
 wandb.sklearn.plot_outlier_candidates(reg, X_train, y_train)
 
-"""## All-in-one: Regression plot
-
-Using this all in one API one can:
-* Log summary of metrics
-* Log learning curve
-* Log outlier candidates
-* Log residual plot
-"""
 
 wandb.sklearn.plot_regressor(reg, X_train, X_test, y_train, y_test, model_name='Ridge')
 
