@@ -84,7 +84,7 @@ y_pred = reg.predict(X_test)
 
 """## Step 2: Initialize W&B run"""
 
-run = wandb.init(project='my-scikit-integration', name="regression")
+run = wandb.init(project='my-scikit-integration', name="regression_git")
 
 """## Step 3: Visualize model performance
 
