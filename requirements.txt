@@ -4,4 +4,3 @@ torch==2.0.1
 torchvision==0.15.2
 wandb==0.15.4
 scikit-learn==0.24.2
-matplotlib==3.4.3  # u otra versión que necesites
