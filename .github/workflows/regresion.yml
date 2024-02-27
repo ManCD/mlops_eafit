@@ -11,10 +11,15 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2  # Updated version to v2
+      uses: actions/checkout@v2  # Actualizado a v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3  # Actualizado a v3
+      with:
+        node-version: '16'  # Actualizado a la versión 16 de Node.js
 
     - name: Set up Python
-      uses: actions/setup-python@v2  # Updated version to v2
+      uses: actions/setup-python@v2
       with:
         python-version: 3.8
 
@@ -27,7 +32,7 @@ jobs:
       run: python regression_script.py
 
     - name: Upload Figures as Artifact
-      uses: actions/upload-artifact@v2  # Updated version to v2
+      uses: actions/upload-artifact@v2
       with:
         name: regression-figures
-        path: model2/simple_regresion.py  # Change this to the directory where your figures are saved
+        path: model2/simple_regresion.py  # Cambia esto al directorio donde se guardan tus figuras
