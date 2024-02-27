@@ -55,14 +55,6 @@ y_pred = reg.predict(X_test)
 run = wandb.init(project='my-scikit-integration', name="regression_git")
 
 """## Step 3: Visualize model performance
-
-### Residual Plot
-
-Measures and plots the predicted target values (y-axis) vs the difference between actual and predicted target values (x-axis), as well as the distribution of the residual error.
-
-Generally, the residuals of a well-fit model should be randomly distributed because good models will account for most phenomena in a data set, except for random error.
-
-[Check out the official documentation here $\rightarrow$](https://docs.wandb.com/library/integrations/scikit#residuals-plot)
 """
 
 wandb.sklearn.plot_residuals(reg, X_train, y_train)
